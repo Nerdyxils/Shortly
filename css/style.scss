@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+$font-stack: 'Poppins', sans-serif;
+
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+h1, h2, h3, h4, h5, p, button, a, input {
+    font-family: $font-stack !important;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+p, a, input {
+    font-size: 16px !important;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pad {
+    padding: 150px 0;
+}
+
+header {
+    .navbar-text {
+        button {
+            background-color: transparent;
+            border: none;
+            color: $Gray;
+            font-size: 14px;
+        }
+        button:focus, button:hover {
+            border-radius: 100px;
+            background-color: $Cyan;
+            color: #fff;
+        }
+        .spec {
+            border-radius: 100px;
+            background-color: $Cyan;
+            color: #fff; 
+        }
+    }
+
+    .main_text {
+        font-size: 70px;
+        font-weight: 900;
+    }
+    .main_btn {
+        margin: 15px auto;
+        background-color: $Cyan;
+        color: #fff;
+        border-radius: 100px;
+        border: 1px solid $Cyan;
+        padding: .5em 1.8em;
+        font-size: 14px;
+    }
+}
+
+.sub_sec {
+    background-color: $Grayish-Violet;
+
+    .form_sec {
+        margin: 0 auto;
+
+        .form_box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -210px;
+            padding: 2em 0 0 2em;
+            background-image: url('../images/bg-shorten-desktop.svg');
+            background-color: $Very-Dark-Violet;
+
+            input {
+                padding: 1em .8em;
+            }
+            .btn-short {
+                padding: 1em 1em;
+                background-color: $Cyan;
+                color: #fff;
+            }
+    
+            .add_l {
+                color: $Red;
+                font-weight: 700;
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+
+        .form_output {
+            margin: 10px auto;
+            padding: 1em .5em;
+            justify-content: center;
+            background-color: #fff;
+
+            .c_btn {
+                background-color: $Cyan;
+                color: #fff;
+                font-size: 14px;
+                border-radius: 5px;
+                border: none;
+                padding: .5em 1.5em;
+            }
+        }
+    }
+
+   
+}
