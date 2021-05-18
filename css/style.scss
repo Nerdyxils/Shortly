@@ -70,6 +70,9 @@ header {
         font-size: 70px !important;
         font-weight: 900;
     }
+    p {
+        color: $Gray;
+    }
     .main_btn {
         margin: 15px auto;
         background-color: $Cyan;
@@ -91,7 +94,7 @@ header {
             margin-left: auto;
             margin-right: auto;
             margin-top: -210px;
-            padding: 2em 0 1em 2em;
+            padding: 2em 2em 1em 2em;
             background-image: url('../images/bg-shorten-desktop.svg');
             background-color: $Very-Dark-Violet;
 
@@ -229,5 +232,39 @@ header {
             }
         }
         
+    }
+}
+
+@media (max-width: 600px) {
+    h1, .main_text {
+        font-size: 25px !important;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    header {
+        .hero_content {
+            text-align: center;
+            .main_text {
+                font-size: 40px !important;
+                text-align: center;
+            }
+            img {
+                margin-bottom: 100px;
+            }
+        }
+        
+    }
+
+    .sub_sec {
+        .btn-short {
+            width: 100%;
+        }
+    }
+
+    .adv_txt {
+        p {
+            max-width: 100% !important;
+        }
     }
 }
