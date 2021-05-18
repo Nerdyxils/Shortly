@@ -97,6 +97,7 @@ header {
             padding: 2em 2em 1em 2em;
             background-image: url('../images/bg-shorten-desktop.svg');
             background-color: $Very-Dark-Violet;
+            border-radius: 12px;
 
             input {
                 padding: 1em .8em;
@@ -153,6 +154,7 @@ header {
             background-color: #fff;
 
             .icon_r {
+                
                 img {
                     width: 20%;
                     margin: 0 auto;
@@ -160,6 +162,7 @@ header {
                     background-color: $Dark-Violet;
                     border-radius: 40px;
                     padding: 20px;
+                    margin-top: -70px;
                 }
             }
 
@@ -242,6 +245,14 @@ header {
     p {
         font-size: 12px !important;
     }
+    .mt-50 {
+        margin-top: 0px !important;
+    }
+    
+    .mt-100 {
+        margin-top: 0px !important;
+    }
+
     header {
         .hero_content {
             text-align: center;
@@ -257,8 +268,13 @@ header {
     }
 
     .sub_sec {
-        .btn-short {
-            width: 100%;
+        .form_box {
+            background-image: url('../images/bg-shorten-mobile.svg');
+            background-color: $Very-Dark-Violet;
+
+            .btn-short {
+                width: 100%;
+            }
         }
     }
 
@@ -267,4 +283,26 @@ header {
             max-width: 100% !important;
         }
     }
+    .adv_content {
+        text-align: center;
+        align-content: center;
+        .flex_item {
+            display: block !important;
+
+            .col-4 {
+                width: 100%;
+            }
+    
+            .dash {
+                color: $Cyan;
+                height: 100px !important;
+                width: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px !important;
+            }
+        }
+
+    }
+    
 }
