@@ -15,8 +15,13 @@ h1, h2, h3, h4, h5, p, button, a, input {
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+}
+
+h4 {
+    font-size: 25px !important;
+    font-weight: 900 !important;
 }
 
 p, a, input {
@@ -31,6 +36,15 @@ img {
 .pad {
     padding: 150px 0;
 }
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
 
 header {
     .navbar-text {
@@ -53,7 +67,7 @@ header {
     }
 
     .main_text {
-        font-size: 70px;
+        font-size: 70px !important;
         font-weight: 900;
     }
     .main_btn {
@@ -68,7 +82,7 @@ header {
 }
 
 .sub_sec {
-    background-color: $Grayish-Violet;
+    background-color: #eee;
 
     .form_sec {
         margin: 0 auto;
@@ -77,7 +91,7 @@ header {
             margin-left: auto;
             margin-right: auto;
             margin-top: -210px;
-            padding: 2em 0 0 2em;
+            padding: 2em 0 1em 2em;
             background-image: url('../images/bg-shorten-desktop.svg');
             background-color: $Very-Dark-Violet;
 
@@ -115,5 +129,105 @@ header {
         }
     }
 
-   
+    .adv_txt {
+        text-align: center;
+
+        p {
+            max-width: 40%;
+            margin: 20px auto;
+            line-height: 1.5;
+        }
+    }
+
+    .adv_content {
+        .flex_item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        
+        .mt, .mt-50, .mt-100 {
+            padding: 20px;
+            background-color: #fff;
+
+            .icon_r {
+                img {
+                    width: 20%;
+                    margin: 0 auto;
+                    text-align: center;
+                    background-color: $Dark-Violet;
+                    border-radius: 40px;
+                    padding: 20px;
+                }
+            }
+
+            h4 {
+                margin-top: 20px;
+            }
+
+            p {
+                margin-top: 10px;
+                color: $Gray;
+                line-height: 1.7;
+                font-size: 12px;
+            }
+        }
+            .dash {
+                border: 10px solid $Cyan;
+                height: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 180px;
+            }
+        }
+    }
+}
+
+.g_stat {
+    width: 100%;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-color: $Very-Dark-Violet;
+    padding: 3em;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+        position: relative;
+    }
+
+    .main_btn {
+        margin: 15px auto;
+        background-color: $Cyan;
+        color: #fff;
+        border-radius: 100px;
+        border: 1px solid $Cyan;
+        padding: .5em 1.8em;
+        font-size: 14px;
+    }
+}
+
+.footer {
+    background-color: $Very-Dark-Violet;
+    color: #fff;
+    padding: 50px 0;
+
+    ul {
+        list-style: none;
+        margin-bottom: 100px;
+        .f-txt {
+            font-weight: 900 !important;
+        }
+        li {
+            margin: 15px auto;
+
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            a:hover, img:hover {
+                color: $Cyan;
+            }
+        }
+        
+    }
 }
