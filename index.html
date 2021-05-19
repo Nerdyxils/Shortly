@@ -71,7 +71,7 @@
           <div class="form_box">
             <div class="row">
               <div class="mb-3 col-md-10 col-xs-12">
-                <input type="url" class="form-control demoInputBox" id="urlInput" placeholder="Shorten a link here">
+                <input type="url" class="form-control demoInputBox" id="urlInput" placeholder="Shorten a link here...">
                 <span class="add_l info" id="urlInput-info"></span>
               </div>
               <div class="mb-3 col-md-2 col-xs-12">
@@ -79,13 +79,13 @@
               </div>
             </div>
           </div>
-          <div class="form_output" style="display: none;">
+          <div class="form_output" id="form-output">
             <div class="row">
               <div class="col-6">
-                <p>Please add a link</p>
+                <p id="urlOutput"></p>
               </div>
               <div class="col-4">
-                <a>Please add a link</a>
+                <a href="#" id="shortUrl"></a>
               </div>
               <div class="col-2">
                 <button class="c_btn">Copy</button>

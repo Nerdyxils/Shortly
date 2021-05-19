@@ -1,5 +1,11 @@
 function shortUrl () {
     urlValidate();
+
+    var url = $("#urlInput");
+
+    $('.form_output').css('display', 'block');
+    $("#urlOutput").html(url.val());
+    $("#shortUrl").html(url.val())
 }
 
 

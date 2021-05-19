@@ -45,9 +45,12 @@ img {
     margin-top: 100px !important;
 }
 
+::-webkit-input-placeholder {
+    color: $Red !important;
+}
+
 .err-class {
     border: 3px solid $Red !important;
-    color: $Red !important;
 }
 
 header {
@@ -123,6 +126,7 @@ header {
 
         .form_output {
             margin: 10px auto;
+            display: none;
             padding: 1em .5em;
             justify-content: center;
             background-color: #fff;
