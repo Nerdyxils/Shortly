@@ -45,6 +45,10 @@ img {
     margin-top: 100px !important;
 }
 
+.err-class {
+    border: 3px solid $Red !important;
+    color: $Red !important;
+}
 
 header {
     .navbar-text {
@@ -98,6 +102,7 @@ header {
             background-image: url('../images/bg-shorten-desktop.svg');
             background-color: $Very-Dark-Violet;
             border-radius: 12px;
+            
 
             input {
                 padding: 1em .8em;
@@ -140,6 +145,7 @@ header {
             max-width: 40%;
             margin: 20px auto;
             line-height: 1.5;
+            color: $Gray;
         }
     }
 
@@ -221,6 +227,7 @@ header {
         margin-bottom: 100px;
         .f-txt {
             font-weight: 900 !important;
+            color: #fff;
         }
         li {
             margin: 15px auto;
@@ -228,7 +235,7 @@ header {
             
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $Gray;
             }
             a:hover, img:hover {
                 color: $Cyan;
@@ -304,5 +311,19 @@ header {
         }
 
     }
+
+    .g_stat {
+        width: 100%;
+        background-image: url('../images/bg-boost-mobile.svg');
+        background-color: $Very-Dark-Violet;
+    }
+
+    .footer {
+        text-align: center;
+        .f_img {
+            margin-bottom: 50px;
+        }
+    }
+    
     
 }
