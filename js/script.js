@@ -4,8 +4,8 @@ $(document).ready(function() {
             var x = $('.form_output').html();
             var input = $('#urlInput').val();
             var y = `<div class="form_d row">
-                        <div className="col-5 inp">` + input + `</div> 
-                        <div className="col-5">
+                        <div class="inp">` + input + `</div> 
+                        <div class="">
                             <a href="#">` + $('#urlInput').val() + `</a>
                         </div>  
                         <div class="col-md-2 col-xs-12">
