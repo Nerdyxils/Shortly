@@ -2,22 +2,26 @@ $(document).ready(function() {
     $('.add-url').click(function() {    
         if ($('#urlInput').val().length != 0) {
             var x = $('.form_output').html();
-
-            var y = `<li class="row">
-            <div class="col-6">
-              <p> x </p>
-            </div>
-            <div class="col-4">
-              <a href="#" id="shortUrl"> x </a>
-            </div>
-            <div class="col-2">
-              <button class="c_btn">Copy</button>
-            </div>
-          ` + $('#urlInput').val() + `</li>`;
+            var input = $('#urlInput').val();
+            var y = `<div class="form_d row">
+                        <div className="col-5 inp">` + input + `</div> 
+                        <div className="col-5">
+                            <a href="#">` + $('#urlInput').val() + `</a>
+                        </div>  
+                        <div class="col-md-2 col-xs-12">
+                            <button class="c_btn copy_button">Copy</button>
+                        </div>
+                    </div>`;
 
           $('.form_output').html(y + x);
-          $('#urlOutput').val("");
+          $('#urlIput').val("");
         } else urlValidate();
+
+        $(document).on('click', '.c_btn', function() {
+            $('#urlInput').select();
+            document.execCommand('copy');
+            $(this).text('Copied!').css('background-color', '#000')
+        })
     })
 
     function urlValidate() {
@@ -31,16 +35,7 @@ $(document).ready(function() {
         }
         return valid;
     }
-
 })
-// function shortUrl () {
-//     // urlValidate();
-//     // var url = $("#urlInput");
-
-//     // $('.form_output').css('display', 'block');
-//     // $("#urlOutput").html(url.val());
-//     // $("#shortUrl").html(url.val())
-// }
 
 
 

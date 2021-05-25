@@ -124,12 +124,22 @@ header {
             }
         }
 
-        .form_output {
+        .form_d {
             margin: 10px auto;
-            display: none;
-            padding: 1em .5em;
+            padding: .5em .3em;
             justify-content: center;
             background-color: #fff;
+            display: grid;
+            grid-template-columns: 1.25fr 1.25fr 0.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                ". . ."
+                ". . ."
+                ". . .";
+
+                a {
+                    color: $Cyan;
+                }
 
             .c_btn {
                 background-color: $Cyan;
@@ -287,7 +297,24 @@ header {
                 width: 100%;
             }
         }
+
+        .form_d {
+            width: 90%;
+            display: block !important;
+
+            .inp {
+                margin-bottom: 10px;
+                border-bottom: 2px solid $Gray;
+            }
+
+            .c_btn {
+                width: 100%;
+                margin: 20px auto;
+            }
+            
+        }
     }
+    
 
     .adv_txt {
         p {
